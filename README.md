@@ -79,7 +79,7 @@ No. | Name | Description
 # Overview of Hadoop architecture used:
 ### Docker Container:
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/Big-Data-Projects/Docker%20Container.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/master/Assets/Docker%20Container.png)
 
 *Fig 1. Different Component of the Hadoop Architecture used in a Docker Container*
 
@@ -97,7 +97,7 @@ This Hadoop command is used to list the files and directories present in the **i
 
 This Hadoop command is used to upload the **UNSW_NB15_training-set2.csv** file to the **input** directory
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/Big-Data-Projects/Interaction%20with%20Namenode.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/master/Assets/Interaction%20with%20Namenode.png)
 
 *Fig 2. Interaction with Namenode Using a Power Shell Window*
 
@@ -111,7 +111,7 @@ This HiveQL command is used to load the data from the **UNSW_NB15_training-set2.
 
 This HiveQL command is used to **count** the number of rows present in the **trainset** table
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/Big-Data-Projects/Interaction%20with%20Hive.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/master/Assets/Interaction%20with%20Hive.png)
 
 *Fig 3. Interaction with Hive Using Power Shell Window*
 
@@ -138,7 +138,7 @@ This command is used to copy the **UNSW_NB15_training-set2.csv** file from the l
 
 ### Load the files into HDFS:
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/Big-Data-Projects/Loading%20Files.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/master/Assets/Loading%20Files.png)
 
 *Fig 5. Loading the Files into HDFS*
 
@@ -147,7 +147,7 @@ This command is used to copy the **UNSW_NB15_training-set2.csv** file from the l
 
 ### The Schema:
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/Big-Data-Projects/Schema.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/master/Assets/Schema.png)
 
 *Fig 6. The Schema of the Training Set*
 
@@ -157,7 +157,7 @@ This command is used to copy the **UNSW_NB15_training-set2.csv** file from the l
 
 This HiveQL command is used to create an external table named trainset with columns id (integer), dur (float), proto (string), Service (string), and other column names and data types specified in the command.
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/Big-Data-Projects/Schema%20Hive.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/master/Assets/Schema%20Hive.png)
 
 *Fig 7. Building the Shema in Hive, Train Set example*
 
@@ -167,7 +167,7 @@ This HiveQL command is used to create an external table named trainset with colu
 
 This HiveQL command is used to add a **partition** named "**attack_cat**" to the "**trainset**" table, where the attack_cat value is set to "Normal"
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/Big-Data-Projects/Partition.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/raw/master/Assets/Partition.png)
 
 *Fig 8: Example of Creating a Partition*
 
@@ -184,19 +184,19 @@ This HiveQL command is used to **count** the number of **rows** in the testset t
 
 This HiveQL command is used to **count** the number of **rows** in the testset table
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/48fa607ee1051e9d57248ffcc0e328684f76d081/Test1.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/master/Assets/Test1.png)
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/48fa607ee1051e9d57248ffcc0e328684f76d081/Test2.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/master/Assets/Test2.png)
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/48fa607ee1051e9d57248ffcc0e328684f76d081/Test3.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/master/Assets/Test3.png)
 
 ### Train Data Set:
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/762aac6257a411f92d27fed71ab3caff80a169f1/Train1.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blobmaster/Assets/Train1.png)
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/762aac6257a411f92d27fed71ab3caff80a169f1/Train2.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/master/Assets/Train2.png)
 
-![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/762aac6257a411f92d27fed71ab3caff80a169f1/Train3.png)
+![alt text](https://github.com/AchrafAjrhourh/hive-intrusion-detection/blob/master/Assets/Train3.png)
 
 The above queries can be summarized in the following table:
 
