@@ -225,4 +225,27 @@ In this part, I will calculate the impurity for 5 features because they are the 
 
 ### Computing the Gini impurity for is_sm_ips_ports:
 
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ls_sm_ips_port.png)
+
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ls_sm_ips_port1.png)
+
+### Compute Gini impurity:
+Left node = 1 – (0/(0+2762))^2 – (2762/(0+2762))^2 = 0
+Right node = 1 - (119,341/(119,341+53,238))^2 – (53,238/(119,341+53,238))^2 = 0.43
+Total impurity = (2762/(2762+172579))*0 + (172579/(2762+172579))*0.43 = 0.42
+
+### Computing the Gini impurity for is_ftp_login:
+
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ls_ftp_login.png)
+
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ls_ftp_login1.png)
+
+### Compute Gini impurity:
+Left node = 1 – (1618/(1618+949))^2 – (949/(1618+949))^2 = 0.46
+Right node = 1 - (111,723/(111,723+55,081))^2 - (55,081/(111,723+55,081))^2 = 0.44
+Total impurity = (1618+949)/(1618+949+111723+55081)*0.46 +
+(111723+55081)/(1618+949+111723+55081)*0.44 = 0.435
+
+### Computing the Gini impurity for ct_ftp_cmd:
+
 
