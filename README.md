@@ -251,4 +251,10 @@ Total impurity = (1618+949)/(1618+949+111723+55081)*0.46 + (111723+55081)/(1618+
 
 ### Computing the Gini impurity for ct_ftp_cmd:
 
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ct_ftp_cmd.png)
 
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ct_ftp_cmd1.png)
+
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ct_ftp_cmd2.png)
+
+![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ct_ftp_cmd3.png)
