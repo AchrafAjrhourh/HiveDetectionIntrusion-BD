@@ -258,3 +258,30 @@ Total impurity = (1618+949)/(1618+949+111723+55081)*0.46 + (111723+55081)/(1618+
 ![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ct_ftp_cmd2.png)
 
 ![alt text](https://raw.githubusercontent.com/AchrafAjrhourh/Hive-Detection-Intrusion/master/Assets/ct_ftp_cmd3.png)
+
+Value of the class | Yes | No
+---|---|---
+ct_ftp_cmd = 0 | 117,723 | 55,051
+ct_ftp_cmd = 1 | 1,598 | 947
+ct_ftp_cmd = 2 | 4 | 2
+ct_ftp_cmd = 4 | 16 | 0
+ct_ftp_cmd = 0 or ct_ftp_cmd = 1 | 119,321 | 55,998
+ct_ftp_cmd = 0 or ct_ftp_cmd = 2 | 117,727 | 55,053
+ct_ftp_cmd = 0 or ct_ftp_cmd = 4 | 117,739 | 55,051
+ct_ftp_cmd = 1 or ct_ftp_cmd = 2 | 1,602 | 949
+ct_ftp_cmd = 1 or ct_ftp_cmd = 4 | 1,614 | 947
+ct_ftp_cmd = 4 or ct_ftp_cmd = 2 | 20 | 2
+ct_ftp_cmd = 0 or ct_ftp_cmd = 1 or  or ct_ftp_cmd = 2 | 119,325 | 56,000
+ct_ftp_cmd = 0 or ct_ftp_cmd = 1 or ct_ftp_cmd = 2 | 119,337 | 55,998
+ct_ftp_cmd = 1 or ct_ftp_cmd = 2 or ct_ftp_cmd = 4 | 1,618 | 949
+
+The total Gini impurity for ct_ftp_cmd = 0.43
+
+### Computing the Gini impurity for the rest columns:
+
+To make the process much easier, I will be implementing a pyth
+on workflow to compute the Gini impurity for each column. the implementation is based on couple of functions as shown below:
+
+`attribute_names = ['is_sm_ips_ports', 'service', 'ct_state_ttl', 'is_ftp_login', ct_ftp_cmd', proto']
+#STEP 1: Calculate gini(D)
+def gini_impurity(value`
