@@ -271,7 +271,7 @@ ct_ftp_cmd = 0 or ct_ftp_cmd = 4 | 117,739 | 55,051
 ct_ftp_cmd = 1 or ct_ftp_cmd = 2 | 1,602 | 949
 ct_ftp_cmd = 1 or ct_ftp_cmd = 4 | 1,614 | 947
 ct_ftp_cmd = 4 or ct_ftp_cmd = 2 | 20 | 2
-ct_ftp_cmd = 0 or ct_ftp_cmd = 1 or  or ct_ftp_cmd = 2 | 119,325 | 56,000
+ct_ftp_cmd = 0 or ct_ftp_cmd = 1 or ct_ftp_cmd = 2 | 119,325 | 56,000
 ct_ftp_cmd = 0 or ct_ftp_cmd = 1 or ct_ftp_cmd = 2 | 119,337 | 55,998
 ct_ftp_cmd = 1 or ct_ftp_cmd = 2 or ct_ftp_cmd = 4 | 1,618 | 949
 
@@ -283,5 +283,19 @@ To make the process much easier, I will be implementing a pyth
 on workflow to compute the Gini impurity for each column. the implementation is based on couple of functions as shown below:
 
 `attribute_names = ['is_sm_ips_ports', 'service', 'ct_state_ttl', 'is_ftp_login', ct_ftp_cmd', proto']
+
 #STEP 1: Calculate gini(D)
-def gini_impurity(value`
+
+def gini_impurity(value_counts):
+
+  n = value_counts.sum()
+  
+  p_sum = 0
+  
+  for key in value_count.keys():
+  
+      p_sum = p_sum + (value_counts[key] / n) * (value_counts[key] / n)
+  
+  gini = 1 - p_sum
+  
+  return gini`
