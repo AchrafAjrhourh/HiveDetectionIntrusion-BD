@@ -384,5 +384,45 @@ As we can see from the above result the **Fifth Node is proto** because it has t
 
 ### The Decision Tree Schema:
 
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Decision%20Tree%20Schema.png)
 
+### Example of How this Decision Tree works:
 
+For a certain record in the dataset, we will see first the value of the ct_state_ttl because it is the Root Node. Let's say, for example, ct_state_ttl = 0, then the second split will be in the level of the proto column. If the proto has as a value ‘sctp’, the prediction of the label will be 1. So, this is a simple example of how that decision tree works.
+
+## Predictions and Confusion Matrix:
+
+### Predictions that are produced by the Decision Tree Model for Training:
+
+### Positive Predictions for Training Set:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Positive%20Predictions%20for%20Training%20Set.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Positive%20Predictions%20for%20Training%20Set1.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Positive%20Predictions%20for%20Training%20Set2.png)
+
+* Positive Predictions: 129,560
+
+### Negative Predictions for Training Set:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Negative%20Predictions%20for%20Training%20Set.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Negative%20Predictions%20for%20Training%20Set1.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Negative%20Predictions%20for%20Training%20Set2.png)
+
+* Negative Predictions: 45,796
+
+### Confusion Matrix for Training Set:
+
+### *HQL Queries to compute the True Positive and False Positive*:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20TP%20FP.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20TP%20FP1.png)
+
+* True Positive: 118,076
+* False Positive: 11,484
+
+### *HQL Queries to compute the True Negative and False Negative*:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20TN%20FN.png)
+
+* True Negative: 44,576
+* False Negative: 1,220
