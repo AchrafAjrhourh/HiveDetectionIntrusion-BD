@@ -282,7 +282,7 @@ The total Gini impurity for ct_ftp_cmd = 0.43
 To make the process much easier, I will be implementing a pyth
 on workflow to compute the Gini impurity for each column. the implementation is based on couple of functions as shown below:
 
-`attribute_names = ['is_sm_ips_ports', 'service', 'ct_state_ttl', 'is_ftp_login', ct_ftp_cmd', proto']
+```attribute_names = ['is_sm_ips_ports', 'service', 'ct_state_ttl', 'is_ftp_login', ct_ftp_cmd', proto']
 
 #STEP 1: Calculate gini(D)
 
@@ -298,4 +298,7 @@ def gini_impurity(value_counts):
   
   gini = 1 - p_sum
   
-  return gini`
+  return gini```
+  
+  `
+  
