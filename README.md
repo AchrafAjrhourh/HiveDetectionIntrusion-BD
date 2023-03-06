@@ -426,3 +426,41 @@ For a certain record in the dataset, we will see first the value of the ct_state
 
 * True Negative: 44,576
 * False Negative: 1,220
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Overall%20Table.png)
+
+* Training Accuracy: (TP + TN) / (TP+FN+TN+FP) = 0.92
+
+### Predictions for Testing Using the Decision Tree Model:
+
+### Positive Predictions for Testing Set:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Positive%20Predictions%20for%20Testing%20Set.png)
+
+* Positive Predictions: 60,507
+
+### Negative Predictions for Testing Set:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Negative%20Predictions%20for%20Testing%20Set.png)
+
+* Negative Predictions: 21,780
+
+### Confusion Matrix for Testing Set:
+
+### *HQL Queries for True Positive and False Positive*:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20TF%20FP%20T.png)
+
+* True Positive: 44,954
+* False Positive: 15,533
+
+### *HQL Queries for True Negative and False Negative*:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20TN%20FN%20T.png)
+
+* True Negative: 21,447
+* False Negative: 333
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/Overall%20Table%20T.png)
+
+* Testing Accuracy: (TP+TN)/(TP+TN+FN+FP) = 0.80
