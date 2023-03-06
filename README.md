@@ -1,5 +1,5 @@
 # Description:
-A project using Hive for Intrusion Detection with a 2 feature decision tree algorithm based on network traffic features, utilizing the UNSW-NB15 dataset and a Hadoop docker container
+A project using Hive for Intrusion Detection with a 2 feature decision tree algorithm based on network traffic features, utilizing the UNSW-NB15 dataset and a Hadoop docker container.
 
 # Abstract:
 In this project we are interested in using Hive for Intrusion Detection using a simple 2 feature decision tree algorithm based on network traffic features. The project will be based on a research project that was done by Nour Moustafa and Jill Slay. During this project, I will use the UNSW-NB15 dataset which is free to use for academic purposes, and this is the case with my project. Furthermore, my project will be based on two research papers that were published by the contributors of the main research project. As mentioned before, the goal behind this project is using Hive. So, the Hadoop environment will be a docker container that contains all the necessary tools.
