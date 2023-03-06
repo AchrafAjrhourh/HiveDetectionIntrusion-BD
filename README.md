@@ -345,3 +345,44 @@ As we can see from the above result the **First Node is proto** because it has t
 As we can see from the above result the **Second Node is service** because it has the best Gini impurity.
 
 ### The result of Gini impurity for Root Node ct_state_ttl = 2:
+
+* Total Gini for is_sm_ips_ports is **0.065**
+* Total Gini for service is **0.117**
+* Total Gini for is_ftp_login is **0.125**
+* Total Gini for ct_ftp_cmd is **0.125**
+* Total Gini for proto is **0.063**
+
+As we can see from the above result the **Third Node is proto** because it has the best Gini impurity.
+
+### The result of Gini impurity for Root Node ct_state_ttl = 3:
+
+* Total Gini for is_sm_ips_ports is **0.267**
+* Total Gini for service is **0.05**
+* Total Gini for is_ftp_login is **0.257**
+* Total Gini for ct_ftp_cmd is **0.257**
+* Total Gini for proto is **0.137**
+
+As we can see from the above result the **Fourth Node is service** because it has the best Gini impurity.
+
+### The result of Gini impurity for Root Node ct_state_ttl = 6:
+
+* Total Gini for is_sm_ips_ports is **0.494**
+* Total Gini for service is **0.441**
+* Total Gini for is_ftp_login is **0.495**
+* Total Gini for ct_ftp_cmd is **0.495**
+* Total Gini for proto is **0.009**
+
+As we can see from the above result the **Fifth Node is proto** because it has the best Gini impurity.
+
+### HQL Queries to Build the Leaf Nodes:
+
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20to%20Build%20the%20Leaf%20Nodes.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20to%20Build%20the%20Leaf%20Nodes1.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20to%20Build%20the%20Leaf%20Nodes2.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20to%20Build%20the%20Leaf%20Nodes3.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/raw/master/Assets/HQL%20Queries%20to%20Build%20the%20Leaf%20Nodes4.png)
+
+### The Decision Tree Schema:
+
+
+
