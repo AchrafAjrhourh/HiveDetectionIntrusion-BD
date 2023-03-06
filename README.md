@@ -284,21 +284,13 @@ on workflow to compute the Gini impurity for each column. the implementation is 
 
 ```
 attribute_names = ['is_sm_ips_ports', 'service', 'ct_state_ttl', 'is_ftp_login', ct_ftp_cmd', proto']
-
 #STEP 1: Calculate gini(D)
-
 def gini_impurity(value_counts):
-
   n = value_counts.sum()
-  
   p_sum = 0
-  
   for key in value_count.keys():
-  
       p_sum = p_sum + (value_counts[key] / n) * (value_counts[key] / n)
-  
   gini = 1 - p_sum
-  
   return gini
 ```
   
@@ -325,5 +317,31 @@ def gini_split_a(attribute_name):
 * Total Gini for ct_ftp_cmd is **0.435**
 * Total Gini for proto is **0.352**
 
-As we can see from the above result the **Root Node is ct_state_ttl** because it has the best Gini
-impurity.
+As we can see from the above result the **Root Node is ct_state_ttl** because it has the best Gini impurity.
+
+## Computing Gini Impurity for the Next Best Feature to Choose:
+
+I used the same process as I did in the previous question, I write HQL queries, and I automate them using python. However, this is the results after computing Gini Imuprity for each split of the Root Node:
+
+
+### The result of Gini impurity for Root Node ct_state_ttl = 0:
+
+* Total Gini for is_sm_ips_ports is **0.042**
+* Total Gini for service is **0.041**
+* Total Gini for is_ftp_login is **0.042**
+* Total Gini for ct_ftp_cmd is **0.042**
+* Total Gini for proto is **0.017**
+
+As we can see from the above result the **First Node is proto** because it has the best Gini impurity.
+
+### The result of Gini impurity for Root Node ct_state_ttl = 1:
+
+* Total Gini for is_sm_ips_ports is **0.291**
+* Total Gini for service is **0.270**
+* Total Gini for is_ftp_login is **0.290**
+* Total Gini for ct_ftp_cmd is **0.290**
+* Total Gini for proto is **0.291**
+
+As we can see from the above result the **Second Node is service** because it has the best Gini impurity.
+
+### The result of Gini impurity for Root Node ct_state_ttl = 2:
