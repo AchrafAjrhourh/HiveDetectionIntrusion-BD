@@ -192,7 +192,7 @@ This HiveQL command is used to **count** the number of **rows** in the testset t
 
 ### Train Data Set:
 
-![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/blobmaster/Assets/Train1.png)
+![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/blob/master/Assets/Train1.png?raw=true)
 
 ![alt text](https://github.com/AchrafAjrhourh/Hive-Detection-Intrusion/blob/master/Assets/Train2.png)
 
